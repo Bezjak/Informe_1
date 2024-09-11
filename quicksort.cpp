@@ -61,8 +61,14 @@ void measureExecutionTime(const string& filename) {
 int main() {
     vector<string> filenames = {
         "ordered_1000.txt",
+        "ordered_10000.txt",
+        "ordered_100000.txt",
         "reverse_ordered_1000.txt",
-        "partially_ordered_1000.txt"
+        "reverse_ordered_10000.txt",
+        "reverse_ordered_100000.txt",
+        "partially_ordered_1000.txt",
+        "partially_ordered_10000.txt",
+        "partially_ordered_100000.txt"
     };
 
     for (const string& filename : filenames) {

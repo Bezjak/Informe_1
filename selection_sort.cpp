@@ -2,6 +2,12 @@
 
 using namespace std;
 
+/*
+ * Este algoritmo selecciona el elemento más pequeño en cada iteración y lo coloca 
+ * en la posición correspondiente. Recorre el vector y realiza intercambios si encuentra 
+ * un valor menor al actual.
+ */
+
 void selectionSort(vector<int>& arr) {
 	int n = arr.size();
 
@@ -50,11 +56,18 @@ void measureExecutionTime(const string& filename) {
     cout << "Tiempo de ejecución para " << filename << ": " << elapsed.count() << " segundos" << endl;
 }
 
+// Función main para ver los tiempos de ejecución de los distintos Datasets
 int main() {
     vector<string> filenames = {
         "ordered_1000.txt",
+        "ordered_10000.txt",
+        "ordered_100000.txt",
         "reverse_ordered_1000.txt",
-        "partially_ordered_1000.txt"
+        "reverse_ordered_10000.txt",
+        "reverse_ordered_100000.txt",
+        "partially_ordered_1000.txt",
+        "partially_ordered_10000.txt",
+        "partially_ordered_100000.txt"
     };
 
     for (const string& filename : filenames) {

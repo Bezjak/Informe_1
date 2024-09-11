@@ -64,7 +64,7 @@ int main() {
     srand(time(0)); // Inicializar la semilla aleatoria
 
     // Tamaños de datasets para probar
-    vector<int> sizes = {1000}; 
+    vector<int> sizes = {100000}; 
 
     for (int size : sizes) {
         generateDataset(size);
